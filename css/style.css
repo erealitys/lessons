@@ -1,0 +1,81 @@
+
+@font-face {
+    font-family: SF Pro Display; /* Имя шрифта */
+    src: url(/font/SFProDisplay-Regular.ttf); /* Путь к файлу со шрифтом */
+   }
+*{
+    /*включить измерение элементов от рамки*/
+    box-sizing: border-box;
+    /*убрать стандартные отступы*/
+    margin: 0;
+    padding: 0;
+}   
+.block{
+    display: flex;
+    justify-content: space-between; /*выравнивание по горизонтали*/
+    align-items: center; /*выравнивание по вертикали*/
+}
+/*ограничения по ширине и выставления посередине */
+.container{
+    /*максимальная широта*/
+    max-width: 1200px;
+    /*разместить посередине*/
+    margin: auto;
+
+
+}
+.header{
+    padding-top: 40px;
+
+}
+.adres-input {
+    max-width: 690px;
+    width: 100%;
+    height: 40px;
+    background: url('/img/home.svg') no-repeat 10px center;
+    border: 1px solid #D9D9D9; 
+    padding-left: 32px;
+    
+}
+adres-input.placeholder{
+/* Regular / 16px | 24px */
+
+font-family: SF Pro Display;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: #BFBFBF;
+}
+
+.buttons
+{
+    display: flex;
+    flex-wrap: nowrap; /*отвечает за перенос элементов*/
+    
+
+
+}
+.button {
+    padding: 8px 16px;
+    display: flex;
+    align-items:center;
+    border-radius: 2px;
+    border:none;
+    cursor: pointer;
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+.button--primary {
+    background: #1890FF;
+    color: #FFFFFF;
+}
+.button--secondary {
+    background: transparent; /*делает кнопку прозрачной*/
+    border: 1px solid #D9D9D9;
+    margin-left: 9px;
+
+}
