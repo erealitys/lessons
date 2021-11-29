@@ -27,6 +27,10 @@ body {
     display: flex;
     flex-wrap: wrap;/*Разрешает перенос элементов на новую строку, если они не помещаются в текущей строке. */   
 }
+button img {
+    margin-left: 4px;
+    margin-right: 4px;
+}
 /*ограничения по ширине и выставления посередине */
 .container{
     /*максимальная широта*/
@@ -64,7 +68,6 @@ body {
 {
     display: flex;
     flex-wrap: nowrap; /*отвечает за перенос элементов*/
-    
 
 
 }
@@ -134,6 +137,14 @@ body {
     align-items:center;
     margin-bottom: 44px;
 }
+.section_header-title {
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 42px;
+color: #000000;
+}
 .search-input {
     max-width: 306px;;
     height: 34px;
@@ -162,7 +173,7 @@ body {
 .cart-title {
 font-family: Roboto;
 font-style: normal;
-font-weight: bold;
+
 font-size: 24px;
 line-height: 32px;
 }
@@ -254,3 +265,39 @@ line-height: 32px;
     display: flex;
     justify-content: space-between;
 }
+/*Страница ресторана*/
+.restaurant-header {
+
+   max-width: 442px;
+   width: 100%;
+   padding-left: 30px;
+}
+
+
+.product-header {
+    display: flex;
+    align-items: start;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+.desc {
+    font-size: 18px;
+    line-height: 21px;
+    color: #8C8C8C;
+    margin-top: 10px;
+}
+.product_desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    max-width: 210px;
+    width: 100%;
+}
+.product-price {
+    font-size: 20px;
+    line-height: 32px;
+    color: #000000;
+    font-weight: bold;
+}
+
