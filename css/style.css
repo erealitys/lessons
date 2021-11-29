@@ -24,6 +24,7 @@ body {
 
 }
 .cards {
+    display: flex;
     flex-wrap: wrap;/*Разрешает перенос элементов на новую строку, если они не помещаются в текущей строке. */   
 }
 /*ограничения по ширине и выставления посередине */
@@ -139,12 +140,14 @@ body {
     background: url(/img/search.svg) no-repeat 10px center;
     
 }
-.card {
+
+.card { 
     max-width: 384px;
     width: 100%;
     margin-bottom: 30px;
     background: #FFFFFF;
     border-radius: 7px;
+    text-decoration: none;
 }
 .card-main {
     padding: 21px 24px 35px;
@@ -250,5 +253,4 @@ line-height: 32px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
