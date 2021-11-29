@@ -100,8 +100,6 @@ body {
     filter: drop-shadow(0px 7px 12px rgba(158, 158, 163, 0.1));
 
 }
-
-    
 .text-block {
         max-width: 520px;
         width:100%;
@@ -125,6 +123,9 @@ body {
     font-size: 24px;
     line-height: 28px;
     color: #302C34;
+}
+.section-rest {
+    padding-bottom: 91px;
 }
 .section_header {
     display: flex;
@@ -219,6 +220,35 @@ line-height: 32px;
     position: absolute;
     top:50%;
     left: -15px;
-    margin-top:-3px; /*Из 50% мы вычли величину нашей точки равную 3px*/
-    
+    margin-top:-3px; /*Из 50% мы вычли величину нашей точки равную 3px*/    
+}
+.footer {
+    background:#FFFFFF;
+    padding: 60px 0px;
+}
+.footer-block {
+    max-width: 556px;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.navigation {
+    max-width: 420px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-link {
+    font-size: 18px;
+    line-height: 21px;
+    color: #595959;
+    text-decoration: none;
+}
+.social-block {
+    max-width: 127px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
