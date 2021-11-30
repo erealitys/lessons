@@ -300,4 +300,120 @@ line-height: 32px;
     color: #000000;
     font-weight: bold;
 }
+/*Модальное окно*/
 
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5)
+}
+.modal-window {
+    max-width: 780px;
+    width: 100%;
+    background:#FFFFFF;
+    padding: 41px 46px;
+    display: flex;
+    flex-direction: column;
+}
+.modal-header {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 46px;
+
+
+}
+.btn-close {
+    width: 25px;
+    height: 25px;
+    background: url("../img/close.svg") no-repeat center/cover;
+    border:none;
+    cursor:pointer;
+
+}
+.modal-title {
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8px;
+    border-bottom: rgba(34, 34, 34, 0.1) solid 1px;
+    margin-bottom: 15px;
+}
+.row-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 216px;
+    width: 100%;
+}
+.product-name {
+    font-size: 18px;
+    line-height: 32px;
+    color: #000000;
+}
+.price-product {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    color: #000000;
+}
+.btn-count {
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #40A9FF;
+    width: 40px;
+    height: 32px;
+    cursor: pointer;
+    background: transparent; /*прозрачные кнопки*/
+    border: 1px solid #40A9FF;
+    border-radius: 2px;
+}
+.count {
+    margin-left: 13px;
+    margin-right: 13px;
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 53px;
+}
+.total-price {
+    display: flex;
+    align-items: center;
+    background: #262626;
+    border-radius: 5px;   
+    padding: 15px 20px;      
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FAFAFA;
+}
+.rub-sum {
+    margin-left: 6px;
+    font-size: 23px;
+    
+}
+.modal-close {
+    display: none;
+}
