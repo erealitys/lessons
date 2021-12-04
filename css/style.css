@@ -417,3 +417,146 @@ line-height: 32px;
 .modal-close {
     display: none;
 }
+/*Адаптация под экраны*/
+/*если ширина экрана стала <= 1200px*/
+@media (max-width:1240px) { /*Точка адаптации 1200px*/
+    .container {
+        width: 95%;
+    }
+    .logo-link {
+        display: none;
+    }
+    .cards {
+        justify-content: space-around ;
+    }
+    .card {
+        max-width: 40%;
+    }
+    .card-img img {
+        width:100%;
+    }
+    }
+
+
+@media (max-width:980px) {
+    .header_buttons {
+        display: none;
+    }
+    .header .logo-link {
+        display:block;
+        order: 1;   
+    }
+    .adres-input {
+            max-width: 75%;
+    }
+.promo-block {
+    background: #FFF1B8; 
+    }
+.card {
+    max-width: 384px;
+    }
+}
+
+@media (max-width:860px) {
+    .card {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 680px){
+    .adres-input {
+        max-width: 100%;
+        margin-bottom: 20px;
+        order: -1;
+    }
+    .header_block {
+        flex-wrap: wrap;
+    }
+    .header_buttons {
+        display: flex;
+    }
+    .header .logo-link {
+        order: 0;   
+    }    
+    .header {
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+    .cards {
+        flex-direction: column;
+    }
+    .card {
+        max-width: 75%;
+    }
+    .section-promo {
+        display: none;
+    }
+    .section_header {
+        max-width: 100%;
+        justify-content: center;
+    }
+    .restaurant-header {
+        justify-content: center;
+    }
+    .rating-star {
+        margin-left: 30px;
+    }
+    .section_header-title {
+        display: none;
+    }
+    .search-input {
+        max-width: 75%;
+    }
+    .midprice {
+        display: none;
+    }
+    .dish {
+        display: none;
+    }
+        
+  
+   }
+    .block_footer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-block {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .footer {
+        padding: 20px 0;
+    }
+    
+@media (max-width:480px) {
+    .adres-input {
+        max-width: 100%;
+        margin-bottom: 20px;
+        order: -1;
+    }
+    .header_block {
+        flex-wrap: wrap;
+    }
+    .header_buttons {
+        display: flex;
+    }
+    .header .logo-link {
+        order: 0; 
+    }    
+    .header {
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+    .card {
+        max-width: 90%;
+    }
+    .section_header {
+        margin-bottom: 20px;
+    }
+    .section-rest {
+        padding-bottom: 0;
+    }
+    .navigation {
+        display: none;
+    }
+}
