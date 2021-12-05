@@ -160,6 +160,9 @@ color: #000000;
     border-radius: 7px;
     text-decoration: none;
 }
+#index .card {
+    cursor: pointer;
+}
 .card-main {
     padding: 21px 24px 35px;
     position: relative; /*позиция применяется для возможности позиционирования других элементов относительно данного*/
@@ -170,7 +173,7 @@ color: #000000;
     justify-content: space-between;
     align-items:center;
 }
-.cart-title {
+.card-title {
 font-family: Roboto;
 font-style: normal;
 
@@ -513,9 +516,6 @@ line-height: 32px;
     .dish {
         display: none;
     }
-        
-  
-   }
     .block_footer {
         flex-wrap: wrap;
         justify-content: center;
@@ -527,6 +527,7 @@ line-height: 32px;
     .footer {
         padding: 20px 0;
     }
+}
     
 @media (max-width:480px) {
     .adres-input {
@@ -559,4 +560,7 @@ line-height: 32px;
     .navigation {
         display: none;
     }
+}
+.not-active {
+    display: none;
 }
